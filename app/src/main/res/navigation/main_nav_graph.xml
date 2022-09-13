@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/previewFragment">
+
+    <fragment
+        android:id="@+id/previewFragment"
+        android:name="com.fara.giphy.presentation.features.preview.PreviewFragment"
+        android:label="previewFragment">
+        <action
+            android:id="@+id/action_previewFragment_to_DetailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.fara.giphy.presentation.features.detail.DetailFragment"
+        android:label="detailFragment">
+        <argument
+            android:name="offset"
+            app:argType="integer" />
+        <argument
+            android:name="query"
+            app:argType="string" />
+    </fragment>
+</navigation>

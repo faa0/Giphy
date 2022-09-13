@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Giphy</string>
+
+    <string name="general_retry">Retry</string>
+    <string name="general_error">An error occurred while loading data</string>
+
+    <string name="fragment_preview_search_hint">Search</string>
+    <string name="fragment_preview_empty">Empty</string>
+</resources>
